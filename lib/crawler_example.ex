@@ -15,4 +15,8 @@ defmodule CrawlerExample do
   def hello do
     :world
   end
+
+  def crawl do
+    Crawler.crawl("http://elixir-lang.org", max_depths: 2)
+  end
 end
